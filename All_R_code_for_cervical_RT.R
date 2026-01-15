@@ -11,6 +11,7 @@ library(ggsci)
 cors=pal_igv()(35)
 cors=c(cors,"purple","orange")
 
+
 sc_data=as.matrix(cervical_RT_tumor@assays$RNA@counts)
 immune.se=DatabaseImmuneCellExpressionData()
 hpca.se=HumanPrimaryCellAtlasData()
