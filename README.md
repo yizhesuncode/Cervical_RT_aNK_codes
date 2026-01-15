@@ -1,133 +1,35 @@
 Cervical_RT_aNK_codes
+This repository contains all the organized codes. It includes R scripts and Python scripts used to study the treatment-specific roles of tumor-associated adaptive NK (aNK) cells in cervical cancer.
 
-This repository contains all R and Python scripts used to investigate the treatment-specific roles of tumor-associated adaptive NK (aNK) cells in cervical cancer, with a particular focus on radiotherapy-associated immune modulation.
+📄 Files Overview
 
-🔬 Project overview
+All_R_code_for_cervical_RT.R
+Main R script for the full analysis workflow, including preprocessing, clustering, differential expression, and visualization.
 
-This project aims to characterize:
+add.flag.R
+Custom utility functions for plotting and annotation.
 
-Treatment-specific functional adaptations of tumor-infiltrating adaptive NK cells
+Celloracle_GRN_Perturbation.py
+Python script for gene regulatory network construction and in silico perturbation analysis using CellOracle.
 
-Radiotherapy (RT)–associated transcriptional reprogramming
+cervical_RT_aNK_paper.Rproj
+RStudio project file.
 
-Immune memory–like features of aNK cells
+.gitignore
+Git ignore configuration.
 
-Gene regulatory networks underlying treatment response
+📦 Requirements
 
-Analyses are based on single-cell RNA-seq data and in silico perturbation modeling.
+All required R packages and Python dependencies are specified inside each script.
 
-📂 Repository structure
-Cervical_RT_aNK_codes/
-│
-├── All_R_code_for_cervical_RT.R      # Main R analysis pipeline
-├── add.flag.R                       # Custom visualization utilities
-├── Celloracle_GRN_Perturbation.py   # GRN perturbation (CellOracle)
-├── README.md
-├── .gitignore
-└── *.Rproj
+🔐 Note
 
-🧬 Main analyses
-R-based analyses
+If you need access to any intermediate or raw data used in this analysis, please contact me directly.
+Due to the confidentiality of this work (pre-publication), some data are not shared publicly.
 
-Data preprocessing & QC
-
-Cell clustering and annotation
-
-Differential expression analysis
-
-Adaptive NK cell subset characterization
-
-Visualization (UMAP, heatmaps, dotplots, etc.)
-
-Python-based analyses
-
-Gene regulatory network construction
-
-In silico TF perturbation modeling
-
-CellOracle-based vector field simulations
-
-Developmental trajectory analysis
-
-🛠 Requirements
-R packages
-
-Seurat
-
-ggplot2
-
-dplyr
-
-ComplexHeatmap
-
-SingleR
-
-patchwork
-
-(see script headers for full list)
-
-Python packages
-
-celloracle
-
-scanpy
-
-numpy
-
-pandas
-
-matplotlib
-
-▶ How to run
-R pipeline
-source("All_R_code_for_cervical_RT.R")
-
-GRN perturbation (Python)
-python Celloracle_GRN_Perturbation.py
-
-
-⚠ Please update file paths according to your local environment.
-
-📊 Output
-
-The pipeline generates:
-
-UMAP visualizations
-
-Heatmaps of marker genes
-
-Differential gene expression tables
-
-Perturbation score distributions
-
-Regulatory network plots
-
-📖 Citation
-
-If you use this code, please cite:
-
-Sun Y. et al.
-Treatment-specific regulation of tumor-associated adaptive NK cells in cervical cancer
-Manuscript in preparation.
-
-👤 Author
+📬 Contact
 
 Yizhe Sun
-Karolinska Institutet
-Email: (optional)
+Email: yizhe.sun@ki.se
 
-⚠ Notes
-
-Raw sequencing data are not included
-
-Large intermediate files are excluded via .gitignore
-
-Scripts are provided for research and reproducibility purposes
-
-🤝 Contact
-
-For questions, suggestions, or collaboration, feel free to:
-
-Open an issue
-
-Contact the author directly
+GitHub: https://github.com/yizhesuncode
