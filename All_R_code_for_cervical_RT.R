@@ -1,4 +1,3 @@
-
 #Read the GSE297041 data and visualize the UMAP and 
 cervical_RT_tumor=readRDS("~/Wanmeng/cervical_scRNA_RT/GSE297041_CESC_18_scRNA_rmdoublet_0.2_cluster_ident_without_anchor.rds")
 DimPlot(cervical_RT_tumor,reduction = "umap",label = T)
